@@ -7,6 +7,8 @@
     <Title>Squirrel.Tests</Title>
     <IsPackable>false</IsPackable>
     <LangVersion>9</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <IsTest>true</IsTest>
     <NoWarn>CS1998,xUnit2015,xUnit2017,xUnit2005,xUnit2009,xUnit2013,xUnit2004</NoWarn>
     <SignAssembly>True</SignAssembly>
@@ -32,6 +34,10 @@
 
   <ItemGroup>
     <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Squirrel.CommandLine.Tests\" />
   </ItemGroup>
 
 </Project>
