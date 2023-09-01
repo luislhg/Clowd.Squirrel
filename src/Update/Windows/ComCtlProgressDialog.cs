@@ -101,6 +101,7 @@ namespace Squirrel.Update.Windows
         {
             var config = new TASKDIALOGCONFIG();
             config.dwCommonButtons = TASKDIALOG_COMMON_BUTTON_FLAGS.TDCBF_CANCEL_BUTTON;
+            config.WindowTitle = "Installer";
             config.MainInstruction = "Installing " + AppName;
             //config.Content = "Hello this is some content";
             config.pfCallbackProc = new TaskDialogCallbackProc(CallbackProc);
