@@ -300,7 +300,7 @@ namespace Squirrel
                     _ => throw new ArgumentOutOfRangeException(nameof(CpuArchitecture)),
                 };
 
-                return GetDotNetDownloadUrl(DotnetRuntimeType.WindowsDesktop, latest, architecture);
+                return GetDotNetDownloadUrl(RuntimeType, latest, architecture);
             }
 
             private static Regex _dotnetRegex = new Regex(@"^net(?:coreapp)?(?<version>[\d\.]{1,7})(?:-(?<arch>[\w\d]+))?(?:-(?<type>\w+))?$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
